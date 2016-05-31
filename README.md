@@ -5,6 +5,14 @@ Welcome to cs7
 
 This is the online, up-to-date home for the course *Intermediate and Advanced R for Spatial Data Analysis*.
 
+It is also a *metapackage* in the sense that when you install it, many of the packages the tutorials depend on will be installed on your computer. Because this metapackage is not on CRAN, we use the **devtools** package to install it:
+
+``` r
+if(!require(devtools))
+  install.packages("devtools")
+devtools::install_github("robinlovelace/cs7")
+```
+
 Learning outcomes
 -----------------
 
