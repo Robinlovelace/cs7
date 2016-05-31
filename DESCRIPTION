@@ -1,0 +1,20 @@
+Package: cs7
+Title: Intermediate and advanced R for spatial data analysis
+Version: 0.0.0.9000
+Authors@R: person("Robin", "Lovelace", email = "first.last@example.com", role = c("aut", "cre"))
+Description: This package downloads a set of R packages for spatial data analysis and provides challenges and questions for learning spatial data in the vignettes.
+Depends: R (>= 3.3.0)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: ggmap,
+    rgdal,
+    sp,
+    rgeos,
+    maptools,
+    dplyr,
+    tidyr,
+    tmap,
+    raster,
+    leaflet,
+    mapview
