@@ -36,6 +36,7 @@ Course content
     -   Practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part I
 -   Objects, functions and concepts for efficient R programming (11.30 - 13.45)
     -   30 minutes intro, 45 minutes hands on, 20 minutes lecture, 40 minutes practical
+    -   Practical handout: [Objects, functions and concepts for efficient R programming](https://www.dropbox.com/s/w9ol2by7b7civr6/Objects_Functions.pdf?dl=0), by Lex Comber
     -   Exercise: Read sections [4.1](https://csgillespie.github.io/efficientR/efficient-set-up.html#top-5-tips-for-an-efficient-r-set-up) to [4.2](https://csgillespie.github.io/efficientR/efficient-set-up.html#operating-system) of Colin Gillespie, Robin Lovelace (2016) and complete the Exercise at the end of 4.2.
 
 **13.45 - 14.30 Lunch**
@@ -73,7 +74,7 @@ Day 3: Advanced R for spatial data analysis
 
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
 -   Transport data with **stplanr** (11:30 - 13:45)
-    -   Exercise: Work through the package's vignette (`ignette("introducing-stplanr")`)
+    -   Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`)
 
 **13.45 - 14.30 Lunch**
 
