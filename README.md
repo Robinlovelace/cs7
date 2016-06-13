@@ -42,8 +42,8 @@ Course content
 **13.45 - 14.30 Lunch**
 
 -   Data manipulation (14:30 - 16:00)
-
--   Plotting paradigms
+    -   Practical: work through [Chapter 5](https://csgillespie.github.io/efficientR/efficient-data-carpentry.html) of *Efficient R Programming*
+-   Plotting paradigms (16:15 - 17:45)
     -   Lecture and practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R) (Part IV)
     -   **Base graphics**
     -   **ggplot2**
