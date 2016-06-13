@@ -114,6 +114,10 @@ Background reading (not available online):
 - @lamigueiro_displaying_2014
 - @brunsdon_introduction_2015
 
+## Further online materials
+
+https://github.com/Nowosad/geostatbook
+
 ## References
 
 ```{r, echo=FALSE, eval=FALSE}

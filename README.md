@@ -101,9 +101,9 @@ Background reading (not available online):
 -   Brunsdon and Comber (2015)
 
 Further online materials
------
+------------------------
 
-https://github.com/Nowosad/geostatbook
+<https://github.com/Nowosad/geostatbook>
 
 References
 ----------
