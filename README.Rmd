@@ -118,6 +118,8 @@ Background reading (not available online):
 
 https://github.com/Nowosad/geostatbook
 
+https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd
+
 ## References
 
 ```{r, echo=FALSE, eval=FALSE}

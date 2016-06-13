@@ -105,6 +105,8 @@ Further online materials
 
 <https://github.com/Nowosad/geostatbook>
 
+<https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd>
+
 References
 ----------
 
