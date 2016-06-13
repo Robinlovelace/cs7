@@ -100,6 +100,11 @@ Background reading (not available online):
 -   Lamigueiro (2014)
 -   Brunsdon and Comber (2015)
 
+Further online materials
+-----
+
+https://github.com/Nowosad/geostatbook
+
 References
 ----------
 
