@@ -62,19 +62,27 @@ Day 2: Basics of R as a GIS
 
 **13.45 - 14.30 Lunch**
 
--   Manipulating spatial objects with a focus on rgeos (14:30 - 16:00)
+-   Loading, plotting and interrogating spatial data, including shapefiles, xy and spatial queries (14:30 - 16:00)
+    -   (practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part III)
+-   Manipulating spatial objects with a focus on rgeos (16:15 - 17:45)
     -   Course handout: [Manipulating Spatial Objects](https://www.dropbox.com/s/9eozr5slpj638es/Manipluating_Spatial_Objects.pdf?dl=0) by Lex Comber
--   Introduction raster data with R (16:15 - 17:45)
-    -   Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/home/Teaching/rmaterials-lc?preview=Raster_Analysis.pdf) by Lex Comber
 
 Day 3: Advanced R for spatial data analysis
 -------------------------------------------
 
--   Raster/vector operations with R - class conversions and aggregation with raster (09:00 - 11:15)
+-   Introduction to raster data with R (09:00 - 11:15)
+    -   Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/home/Teaching/rmaterials-lc?preview=Raster_Analysis.pdf) by Lex Comber
 
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
 -   Transport data with **stplanr** (11:30 - 13:45)
     -   Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`)
+    -   Exercise (optional): Reproduce the analysis represented here on cycling potential over the Menai bridge with reference to the [github.com/Robinlovelace/pct-menai](https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd) repo and by installing the 'pctWales' package from GitHub:
+
+``` r
+devtools::install_github("robinlovelace/pct-menai")
+```
+
+**Bonus test**: can you reproduce [these results](http://rpubs.com/RobinLovelace/189307)?
 
 **13.45 - 14.30 Lunch**
 
