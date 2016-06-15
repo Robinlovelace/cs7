@@ -71,7 +71,13 @@ Day 3: Advanced R for spatial data analysis
 -------------------------------------------
 
 -   Introduction to raster data with R (09:00 - 11:15)
-    -   Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/home/Teaching/rmaterials-lc?preview=Raster_Analysis.pdf) by Lex Comber
+    -   Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/s/obn45ov7kpos5to/Raster_Analysis.pdf?dl=0) by Lex Comber
+    -   See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
+
+``` r
+library(raster)
+poz = raster("data/poz_modified.tif")
+```
 
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
 -   Transport data with **stplanr** (11:30 - 13:45)
