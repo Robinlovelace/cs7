@@ -109,9 +109,12 @@ devtools::install_github("robinlovelace/pct-menai")
 **13.45 - 14.30 Lunch**
 
 - Points pattern analysis - points to surfaces by IDW, Kriging (14:30 - 16:00) 
-    - Handout: [Point Patter analysis](https://www.dropbox.com/s/gn1i21rsvipbwom/Point_Pattern.pdf?dl=0) by Lex Comber
+    - Handout: [Point Pattern analysis](https://www.dropbox.com/s/gn1i21rsvipbwom/Point_Pattern.pdf?dl=0) by Lex Comber
 
 - Advanced graphics: online mapping with **mapview** and leaflet and static maps with **tmap** (16:15 - 17:45)
+    - Exercise: take a look at what mapview can do [online](http://environmentalinformatics-marburg.github.io/mapview/introduction.html).
+    - Try applying the methods to your own data
+    - Also see: using [Shiny with leaflet](https://rstudio.github.io/leaflet/shiny.html)
 
 ## Prerequisites and course home
 
@@ -137,8 +140,6 @@ Background reading (not available online):
 - A document exploring cycling potential over the Menai Strait, UK: https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd
 
 - A [tutorial on OSM data](https://github.com/Robinlovelace/osm-tutorial/blob/master/osm.pdf) with R (this is a little out of date). A more up-to-date resource is the [osmplotr](https://github.com/ropenscilabs/osmplotr) package - see there and other activity online to find out more.
-
-
 
 ## References
 
