@@ -81,7 +81,7 @@ poz = raster("data/poz_modified.tif")
 
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
 -   Transport data with **stplanr** (11:30 - 13:45)
-    -   Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`)
+    -   Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`), which can also be found [online](https://cran.r-project.org/web/packages/stplanr/vignettes/introducing-stplanr.html).
     -   Exercise (optional): Reproduce the analysis represented here on cycling potential over the Menai bridge with reference to the [github.com/Robinlovelace/pct-menai](https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd) repo and by installing the 'pctWales' package from GitHub:
 
 ``` r
