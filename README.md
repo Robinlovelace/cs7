@@ -98,6 +98,7 @@ devtools::install_github("robinlovelace/pct-menai")
     -   Exercise: take a look at what mapview can do [online](http://environmentalinformatics-marburg.github.io/mapview/introduction.html).
     -   Try applying the methods to your own data
     -   Also see: using [Shiny with leaflet](https://rstudio.github.io/leaflet/shiny.html)
+    -   Some R code for [online mapping](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/R/online-mapping-methods.R).
 
 Prerequisites and course home
 -----------------------------
@@ -125,6 +126,8 @@ Further online materials
 -   A document exploring cycling potential over the Menai Strait, UK: <https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd>
 
 -   A [tutorial on OSM data](https://github.com/Robinlovelace/osm-tutorial/blob/master/osm.pdf) with R (this is a little out of date). A more up-to-date resource is the [osmplotr](https://github.com/ropenscilabs/osmplotr) package - see there and other activity online to find out more.
+
+Contact: r.lovelace at leeds. ac. uk - for any questions or feedback on this course
 
 References
 ----------
