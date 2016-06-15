@@ -117,9 +117,11 @@ Background reading (not available online):
 Further online materials
 ------------------------
 
-<https://github.com/Nowosad/geostatbook>
+-   A free book on Geostatistics by Jakub Nowosad: <https://github.com/Nowosad/geostatbook>
 
-<https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd>
+-   A document exploring cycling potential over the Menai Strait, UK: <https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd>
+
+-   A [tutorial on OSM data](https://github.com/Robinlovelace/osm-tutorial/blob/master/osm.pdf) with R (this is a little out of date). A more up-to-date resource is the [osmplotr](https://github.com/ropenscilabs/osmplotr) package - see there and other activity online to find out more.
 
 References
 ----------
