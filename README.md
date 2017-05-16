@@ -29,43 +29,103 @@ By the end of the course participants will:
 Course content
 --------------
 
-### Day 1: Intermediate R
+The course is structured in 45 minute classes which mix practical and lecture content, with an emphasis on one or the other in each class. The timings each day are as follows:
 
--   (Re)introduction to RStudio (9:30 - 11:15)
-    -   1 hr lecturing, 45 minutes practical
-    -   Practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part I
--   Objects, functions and concepts for efficient R programming (11.30 - 13.45)
-    -   30 minutes intro, 45 minutes hands on, 20 minutes lecture, 40 minutes practical
-    -   Practical handout: [Objects, functions and concepts for efficient R programming](https://www.dropbox.com/s/w9ol2by7b7civr6/Objects_Functions.pdf?dl=0), by Lex Comber
-    -   Exercise: Read sections [4.1](https://csgillespie.github.io/efficientR/efficient-set-up.html#top-5-tips-for-an-efficient-r-set-up) to [4.2](https://csgillespie.github.io/efficientR/efficient-set-up.html#operating-system) of Colin Gillespie, Robin Lovelace (2016) and complete the Exercise at the end of 4.2.
+10:00 - 11:30 classes (2)
 
-**13.45 - 14.30 Lunch**
+11:30 - 11:45 coffee break
 
--   Data manipulation (14:30 - 16:00)
-    -   Practical: work through [Chapter 5](https://csgillespie.github.io/efficientR/efficient-data-carpentry.html) of *Efficient R Programming*
--   Plotting paradigms (16:15 - 17:45)
-    -   Lecture and practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R) (Part IV)
-    -   **Base graphics**
-    -   **ggplot2**
-    -   **tmap**
-    -   **leaflet**
-    -   **mapview**
+11:45 - 13:15 classes (2)
+
+13:15 - 14:00 lunch break
+
+14:00 - 15:30 classes (2)
+
+15:30 - 15:45 coffee break
+
+15:45 - 18:45 classes (4)
+
+### Day 1: From introductory to intermediate R
+
+-   Introduction: (10:00 - 11:30)
+    -   30 minute lecture: why R for 'Geographic Data Science'?
+    -   15 minute demonstration of effective use of R and RStudio
+    -   45 minute practical: exploring your R/RStudio set-up
+        -   Boosting productivity with RStudio ([ERP 2.5](https://csgillespie.github.io/efficientR/set-up.html#rstudio))
+        -   How R's ecosystem works: packages, tutorials, help forums and code sharing sites ([ERP 4.4](https://csgillespie.github.io/efficientR/workflow.html#package-selection) and [ERP 10](https://csgillespie.github.io/efficientR/learning.html))
+
+11:30 - 11:45 coffee break
+
+-   Objects, functions and concepts for efficient R programming (11:45 - 13:15)
+    -   15 minutes intro, 30 minutes hands on with the [Vectors chapter](http://r4ds.had.co.nz/vectors.html) of [R for Data Science](http://r4ds.had.co.nz) (Wickham and Grolemund 2016)
+    -   An introduction to classes
+-   45 minute practical on data frames and other data forms <!-- add practical -->
+    -   Types of vector data
+    -   Dimensionality: lists, matrices, data frames and arrays
+    -   Subsetting and regular expressions
+
+13:15 - 14:00 lunch break
+
+14:00 - 15:30 classes (2)
+
+-   Data input/output (14:00 - 15:30)
+-   Data sources (15 minute lecture)
+    -   From the web, APIs and packages
+    -   Practical (30 minutes): reproduce benchmarks in ([ERP 5](https://csgillespie.github.io/efficientR/input-output.html)
+-   Practical (45 minutes): in groups, access data on one of the following topics
+    -   Weather conditions in countries worldwide
+    -   Economic performance of countries in Europe
+    -   Species distributions
+    -   Soil types
+    -   CO2 emissions
+-   Regular expressions and tidying data (15:45 - 17:15)
+    -   Introduction to data cleaning (15 minute lecture)
+    -   Regular expressions (30 minute practical)
+        -   Work through the guidance in the regular expressions vignette provided by: `vignette("regular-expressions")`
+    -   Tidying data (45 minute practical)
+-   Data carpentry with **dplyr** (17:15 - 18:45) [ERP 6](https://csgillespie.github.io/efficientR/data-carpentry.html))
+    -   Subsetting rows and columns
+    -   Creating new variables
+    -   Grouping and aggregating
+    -   Joining tables together
 
 Day 2: Basics of R as a GIS
 ---------------------------
 
--   Spatial data in R, sp classes and projections (09.00 -11.15)
-    -   Practical handout 1: [Spatial data in R](https://www.dropbox.com/s/9eozr5slpj638es/Manipluating_Spatial_Objects.pdf?dl=0) by Lex Comber
-    -   Practical handout 2: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part II)
--   Loading, plotting and interrogating spatial data, including shapefiles, xy and spatial queries (11:30 - 13:45)
-    -   (practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part III)
+-   An introduction to spatial data with sp (10:00 - 11:30)
+-   An introduction to spatial classes (lecture 30 minutes)
+-   Practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part I and II
+-   Spatial data classes [IVSDR II](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/intro-spatial.Rmd#part-ii-spatial-data-in-r) (30 minutes)
+-   Subsetting data and basic plotting (30 minutes)
 
-**13.45 - 14.30 Lunch**
+11:30 - 11:45 coffee break
 
--   Loading, plotting and interrogating spatial data, including shapefiles, xy and spatial queries (14:30 - 16:00)
-    -   (practical handout: [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R), Part III)
--   Manipulating spatial objects with a focus on rgeos (16:15 - 17:45)
-    -   Course handout: [Manipulating Spatial Objects](https://www.dropbox.com/s/9eozr5slpj638es/Manipluating_Spatial_Objects.pdf?dl=0) by Lex Comber
+-   Creating and manipulating spatial data [IVSDR III](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/intro-spatial.Rmd#part-iii-creating-and-manipulating-spatial-data) (11:45 - 13:15)
+-   Creating spatial data (30 minutes)
+-   Projections (30 minutes)
+    -   Transforming data using `spTransform()`
+-   Attribute joins (30 minutes)
+-   Bonus topic: spatial subsetting and spatial joins
+
+13:15 - 14:00 lunch break
+
+-   Basic visualisation based on [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R) (Part IV) (14:00 - 15:30)
+-   Introduction to plotting paradigms in R (lecture)
+-   Complete practical exercises
+    -   **Base graphics**
+    -   **ggplot2**
+    -   **tmap**
+
+15:30 - 15:45 coffee break
+
+-   Advanced visualisation (15:45 - 18:45)
+-   Demonstration and discussion of the Propensity to Cycle Tool (PCT) (45 minute lecture)
+-   Practical: Visualising Spatial Data Tutorial (45 minutes)
+
+Coffee break
+
+-   Lecture and practical: interactive maps with R (45 minutes)
+-   Advanced practical (challenge): Create an interactive map in shiny (30 minutes)
 
 Day 3: Advanced R for spatial data analysis
 -------------------------------------------
@@ -90,7 +150,7 @@ devtools::install_github("robinlovelace/pct-menai")
 
 **Bonus test**: can you reproduce [these results](http://rpubs.com/RobinLovelace/189307)?
 
-**13.45 - 14.30 Lunch**
+**13:45 - 14:30 Lunch**
 
 -   Points pattern analysis - points to surfaces by IDW, Kriging (14:30 - 16:00)
     -   Handout: [Point Pattern analysis](https://www.dropbox.com/s/gn1i21rsvipbwom/Point_Pattern.pdf?dl=0) by Lex Comber
