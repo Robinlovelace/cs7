@@ -142,9 +142,9 @@ Coffee break
   - Lecture and practical: interactive maps with R (45 minutes)
   - Advanced practical (challenge): Create an interactive map in shiny (30 minutes)
 
-## Day 3: Simple Features 
+## Day 3: Advanced Geographic Data with R
 
-- Introduction to raster data with R (09:00 - 11:15) 
+- Introduction to raster data with R (10:00 - 11:30) 
       - Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/s/obn45ov7kpos5to/Raster_Analysis.pdf?dl=0) by Lex Comber
       - See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
       
@@ -153,10 +153,9 @@ library(raster)
 poz = raster("data/poz_modified.tif")
 ```
 
-
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
 
-- Transport data with **stplanr** (11:30 - 13:45)
+- Transport data with **stplanr** (11:45 - 13:15)
     - Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`), which can also be found [online](https://cran.r-project.org/web/packages/stplanr/vignettes/introducing-stplanr.html).
     - Exercise (optional): Reproduce the analysis represented here on cycling potential over the Menai bridge with reference to the 
     [github.com/Robinlovelace/pct-menai](https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd) repo and by installing the 'pctWales' package from GitHub:
@@ -167,16 +166,13 @@ devtools::install_github("robinlovelace/pct-menai")
 
 **Bonus test**: can you reproduce [these results](http://rpubs.com/RobinLovelace/189307)?
 
-**13:45 - 14:30 Lunch**
+13:15 - 14:00 lunch break
 
-- Points pattern analysis - points to surfaces by IDW, Kriging (14:30 - 16:00) 
+
+- Points pattern analysis -  (14:00 - 15:30) 
     - Handout: [Point Pattern analysis](https://www.dropbox.com/s/gn1i21rsvipbwom/Point_Pattern.pdf?dl=0) by Lex Comber
 
-- Advanced graphics: online mapping with **mapview** and leaflet and static maps with **tmap** (16:15 - 17:45)
-    - Exercise: take a look at what mapview can do [online](http://environmentalinformatics-marburg.github.io/mapview/introduction.html).
-    - Try applying the methods to your own data
-    - Also see: using [Shiny with leaflet](https://rstudio.github.io/leaflet/shiny.html)
-    - Some R code for [online mapping](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/R/online-mapping-methods.R).
+- Simple features with R (15:45 - 18:45)
 
 ## Prerequisites and course home
 
