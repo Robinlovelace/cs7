@@ -152,3 +152,22 @@ tmp_av = group_by(tmp, geo) %>%
 
 Europe@data = left_join(Europe@data, tmp_av)
 qtm(Europe, "av_ed") # more cleaning needed!
+
+head(tmp)
+head(Europe@data[1:4])
+head(Europe$geo) # joining variable
+head(tmp$geo)
+
+euro_joined = left_join(Europe@data, tmp[c(2, 4)])
+head(euro_joined)
+
+tmp = tmp[1:6, c(2, 4)]
+select(tmp, geo, value)[1:6,]
+
+# filtering using square brackets
+sel = Europe$continent == "Europe"
+summary(sel)
+Europe_small = Europe[sel, ]
+qtm(Europe_small) +
+  tm_shape(Europe) +
+  tm_borders()
