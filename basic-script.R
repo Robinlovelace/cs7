@@ -39,8 +39,7 @@ x$x_sqrd = x$x^2
 
 # download the dataset 'Pupil/Student - teacher ratio and average class' from eurostat
 # for more developed API see https://github.com/rOpenGov/eurostat
-tmp <- getEurostatRCV(kod = "educ_iste")
-head(tmp)
+
 
 # download the dataset 'People killed in road accidents' from eurostat
 # and plot a maptable for selected countries
@@ -73,7 +72,7 @@ x
 x[3] = 'na' # class coercion - now character
 x
 
-y + x
+# y + x # error
 l = list(1, 2, 'na', 4, x)
 l
 class(y)
@@ -81,3 +80,76 @@ class(c(y, 'hello'))
 b = c(TRUE, FALSE, TRUE, NA)
 class(b)
 class(c(b, y))
+
+# solution to challenge
+l = list(TRUE, 0.5, "hello")
+unlist(l)
+# lapply iterates over every list item
+# returns a list
+lapply(X = l, FUN = class)
+# parallel version:
+parallel::mclapply(X = l, FUN = class)
+# return vector
+sapply(X = l, FUN = class)
+
+# be aware of for loops:
+for(i in 1:length(l)) {
+  print(class(l[[i]]))
+}
+
+# loading/saving data:
+# data input/output
+
+data(mpg, package = "ggplot2")
+plot(mpg$displ, mpg$cyl)
+write.csv(mpg, "mpg.csv")
+saveRDS(mpg, "mpg.Rds")
+mpg2 = readRDS("mpg.Rds")
+identical(mpg, mpg2)
+
+file.size("mpg.csv")
+file.size("mpg.Rds")
+
+file.size("mpg.csv") / file.size("mpg.Rds")
+system.time(
+  write.csv(mpg, "mpg.csv")
+)
+system.time(
+  saveRDS(mpg, "mpg.Rds")
+)
+
+# Geographical data from the Creating maps in R
+# tutorial:
+# lnd = sf::st_read("data/london_sport.shp")
+# sf::st_write(lnd, "lnd2.geojson")
+# saveRDS(lnd, "lnd.Rds")
+# file.size("lnd.geojson") / file.size("lnd.Rds")
+
+# getting data
+tmp <- getEurostatRCV(kod = "educ_iste")
+head(tmp)
+# geo data
+library(tmap)
+data(Europe)
+names(Europe)
+head(Europe@data[1:4])
+
+# data tidying
+library(stringr)
+?str_sub
+Europe$geo = str_sub(string = Europe$iso_a3, start = 0, end = 2)
+nrow(Europe)
+nrow(tmp) # big difference!
+unique(tmp$geo) # but small number of countries...
+summary(tmp$time) # back to 1998
+summary(tmp$value)
+tmp$time = as.numeric(as.character(tmp$time))
+tmp = filter(tmp, time > 2009 )
+tmp_av = group_by(tmp, geo) %>%
+  summarise(av_ed = mean(value))
+
+library(dplyr)
+Europe@data = left_join(Europe@data, tmp_av)
+qtm(Europe)
+qtm(Europe, "av_ed") # more cleaning needed!
+
