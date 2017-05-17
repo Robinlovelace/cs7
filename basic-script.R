@@ -51,7 +51,7 @@ library(SmarterPoland) # load package
 t1 <- getEurostatRCV("tsdtr420")
 
 ggplot(t1, aes(time, value, color=sex, group=sex)) +
-           geom_line() + facet_wrap(~geo)
+  geom_line() + facet_wrap(~geo)
 
 powiaty = SmarterPoland::getMPpowiaty() # enter tab to see functions
 
@@ -126,6 +126,7 @@ system.time(
 # file.size("lnd.geojson") / file.size("lnd.Rds")
 
 # getting data
+library(SmarterPoland)
 tmp <- getEurostatRCV(kod = "educ_iste")
 head(tmp)
 # geo data
@@ -136,6 +137,7 @@ head(Europe@data[1:4])
 
 # data tidying
 library(stringr)
+library(dplyr)
 ?str_sub
 Europe$geo = str_sub(string = Europe$iso_a3, start = 0, end = 2)
 nrow(Europe)
@@ -146,10 +148,7 @@ summary(tmp$value)
 tmp$time = as.numeric(as.character(tmp$time))
 tmp = filter(tmp, time > 2009 )
 tmp_av = group_by(tmp, geo) %>%
-  summarise(av_ed = mean(value))
+  summarise(av_ed = mean(value, na.rm = T))
 
-library(dplyr)
 Europe@data = left_join(Europe@data, tmp_av)
-qtm(Europe)
 qtm(Europe, "av_ed") # more cleaning needed!
-
