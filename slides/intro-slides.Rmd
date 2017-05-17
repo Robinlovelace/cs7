@@ -1,12 +1,10 @@
 ---
 title: "Intermediate and Advanced R for Spatial Data Analysis"
 author: "Robin Lovelace, University of Leeds, \n `r Sys.Date()`"
-date: "Slides: [rpubs.com/RobinLovelace](http://rpubs.com/RobinLovelace)"
+date: "Poznan, 2017 - more material: rpubs.com/robinlovelace"
 output:
   ioslides_presentation:
-    widescreen: true
     transition: slower
-    logo: ../figures/its-logo-square.png
 ---
 
 ## An overview of the course
@@ -46,33 +44,28 @@ Topics covered:
     - OD pair processing to generate geographic desire lines
     - Using the `overline()` function to aggregate routes to create a route network
 
-## Agenda | see github.com/ITSLeeds/R4TS
+## Agenda | see github.com/robinlovelace/cs7
 
-- Day 1: Building strong foundations
-    - R and RStudio
-    - Objects, functions, concepts
-    - Getting data into R
-    - Data carpentry 
-    - Spatial data
-
-- Day 2: R for transport applications
-    - Transport data with **stplanr**
-    - Air pollution analysis with **openair**
-    - Application to your own datasets
+- Intro to intermediary R
+- Basics of R as a GIS
+- Advanced map making
     
 ## Resources
 
-The course website/wiki is [github.com/ITSLeeds/R4TS](https://github.com/ITSLeeds/R4TS)
+The course website/wiki is [github.com/robinlovelace/cs7](https://github.com/robinlovelace/cs7)
 
-- Course overview: in the [courses](https://github.com/ITSLeeds/R4TS/tree/master/courses) folder
-- Slides: Available from [rpubs.com/robinlovelace](http://rpubs.com/RobinLovelace/) and the [slides](https://github.com/ITSLeeds/R4TS/tree/master/slides) folder
+- Course overview: in https://github.com/robinlovelace/cs7 
+- Slides: Available from [slides](https://github.com/robinlovelace/cs7/tree/master/slides) folder
 - Printed material:
     - Introduction to Visualising Spatial Data with R
-    - Simple Features for Geographic Data: an Introduction
-    - **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
-    
-- Online material: see [GIS4ta-outline.Rmd](https://github.com/ITSLeeds/R4TS/blob/master/courses/GIS4ta-outline.Rmd) in the courses folder
+    - Visualising spatial data: from Base to Shiny
+    - Point Pattern Analysis tutorial
 
+    
+- Online material: see https://github.com/robinlovelace/cs7 in the courses folder
+  - **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
+  - Efficient R Programming (ERP): https://csgillespie.github.io/efficientR/
+  - R for Data Science (R4DS): http://r4ds.had.co.nz/
 
 # Why R?
 
@@ -260,9 +253,32 @@ vignette("plotexample")
     - Good old fashioned email
 
 
-## Exercises (in groups)
+## Exercises 
+
+In groups
 
 - Think about the kind of data and analysis you'll be using R for
 - Which packages have you be using to date? (if any)
 - Find 3 packages that could help: think about pros and cons
 - What are the alternatives to R for this work?
+
+Alone
+
+- Install a new R package
+- How good are its functions?
+- Does it have vignettes?
+- What are alternative packages?
+- Is it the best 'tool for the job'?
+
+## An introduction to classes
+
+- 45 minute practical on vectors and lists ([Chapter 20 of R4DS](http://r4ds.had.co.nz/vectors.html)):
+  - http://r4ds.had.co.nz/vectors.html
+  <!-- add practical -->
+    - Types of vector data
+    - Dimensionality: lists, matrices, data frames and arrays
+    - Subsetting and regular expressions
+    
+- Challenge: Create a list containing logical, numeric and character vectors.
+  - What happens when you `unlist()` this list?
+    

@@ -26,6 +26,22 @@ By the end of the course participants will:
 -   Be proficient in the use of R to create maps using add-on packages such as tmap
 -   Have some experience with advanced functionality such as raster data and interactive maps
 
+Resources
+---------
+
+The course website/wiki is [github.com/robinlovelace/cs7](https://github.com/robinlovelace/cs7)
+
+-   Course overview: in <https://github.com/robinlovelace/cs7>
+-   Slides: Available from [slides](https://github.com/robinlovelace/cs7/tree/master/slides) folder
+-   Printed material:
+    -   Introduction to Visualising Spatial Data with R
+    -   Visualising spatial data: from Base to Shiny
+    -   Point Pattern Analysis tutorial
+-   Online material: see <https://github.com/robinlovelace/cs7> in the courses folder
+-   **stplanr**: A package for Transport Planning (stplanr-paper for short, available from [github.com/ropensci/stplanr](https://github.com/ropensci/stplanr/blob/master/vignettes/stplanr-paper.Rmd)), a detailed account of how to use spatial data in R as part of a transport planning workflow.
+-   Efficient R Programming (ERP): <https://csgillespie.github.io/efficientR/>
+-   R for Data Science (R4DS): <http://r4ds.had.co.nz/>
+
 Course content
 --------------
 
@@ -57,37 +73,43 @@ The course is structured in 45 minute classes which mix practical and lecture co
 11:30 - 11:45 coffee break
 
 -   Objects, functions and concepts for efficient R programming (11:45 - 13:15)
+    -   R packages (15 minute talk, 30 minute group activity)
     -   15 minutes intro, 30 minutes hands on with the [Vectors chapter](http://r4ds.had.co.nz/vectors.html) of [R for Data Science](http://r4ds.had.co.nz) (Wickham and Grolemund 2016)
-    -   An introduction to classes
--   45 minute practical on data frames and other data forms <!-- add practical -->
-    -   Types of vector data
-    -   Dimensionality: lists, matrices, data frames and arrays
-    -   Subsetting and regular expressions
 
 13:15 - 14:00 lunch break
 
-14:00 - 15:30 classes (2)
+-   Vectors and lists ([Chapter 20 of R4DS](http://r4ds.had.co.nz/vectors.html)) (14:00 - 14:45):
+-   see <http://r4ds.had.co.nz/vectors.html>
+-   Types of vector data
+-   Dimensionality: lists, matrices, data frames and arrays
 
--   Data input/output (14:00 - 15:30)
--   Data sources (15 minute lecture)
-    -   From the web, APIs and packages
-    -   Practical (30 minutes): reproduce benchmarks in ([ERP 5](https://csgillespie.github.io/efficientR/input-output.html)
--   Practical (45 minutes): in groups, access data on one of the following topics
+-   Data input/output (14:45 - 15:30)
+-   Aim: get some 'raw' data ready for next class, e.g. on:
     -   Weather conditions in countries worldwide
     -   Economic performance of countries in Europe
     -   Species distributions
     -   Soil types
     -   CO2 emissions
--   Regular expressions and tidying data (15:45 - 17:15)
+-   Data sources (15 minute lecture)
+-   Practical (30 minutes): obtain data, from web, APIs packages
+    -   Quick go round: what is your dataset?
+    -   Optional extra (advanced): reproduce benchmarks in ([ERP 5](https://csgillespie.github.io/efficientR/input-output.html)
+
+15:30 - 16:00 coffee break
+
+-   Tidying data (16:00 - 17:15)
     -   Introduction to data cleaning (15 minute lecture)
-    -   Regular expressions (30 minute practical)
+    -   Practical (45 minutes): work through <http://r4ds.had.co.nz/tidy-data.html>
+    -   Regular expressions (15 minute practical)
         -   Work through the guidance in the regular expressions vignette provided by: `vignette("regular-expressions")`
-    -   Tidying data (45 minute practical)
--   Data carpentry with **dplyr** (17:15 - 18:45) [ERP 6](https://csgillespie.github.io/efficientR/data-carpentry.html))
-    -   Subsetting rows and columns
-    -   Creating new variables
-    -   Grouping and aggregating
-    -   Joining tables together
+
+17:15 - 17:20 minute break
+
+-   Data carpentry with **dplyr** (17:20 - 18:45) [ERP 6.4](https://csgillespie.github.io/efficientR/data-carpentry.html)): <https://csgillespie.github.io/efficientR/data-carpentry.html#dplyr>
+    -   Subsetting rows and columns ([6.4.3](https://csgillespie.github.io/efficientR/data-carpentry.html#filtering-rows))
+    -   Creating new variables ([see 6.4.4](https://csgillespie.github.io/efficientR/data-carpentry.html#chaining-operations))
+    -   Grouping and aggregating ([6.5.5](https://csgillespie.github.io/efficientR/data-carpentry.html#data-aggregation))
+    -   Joining tables together ([6.5](https://csgillespie.github.io/efficientR/data-carpentry.html#combining-datasets))
 
 Day 2: Basics of R as a GIS
 ---------------------------
