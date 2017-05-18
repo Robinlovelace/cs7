@@ -171,3 +171,16 @@ Europe_small = Europe[sel, ]
 qtm(Europe_small) +
   tm_shape(Europe) +
   tm_borders()
+
+# getting osm data - you may need RTools exe
+devtools::install_github("robinlovelace/osmdata")
+library(osmdata)
+library(dplyr)
+q = opq("Poznan, Poland") %>%
+  add_feature(key = "amenity", value = "pub")
+q
+pubs_poz = osmdata_sf(q = q)
+pubs_poz
+library(tmap)
+tmap_mode("view")
+qtm(pubs_poz$osm_points)
