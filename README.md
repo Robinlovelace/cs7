@@ -130,7 +130,8 @@ Day 2: Basics of R as a GIS
 
 13:15 - 14:00 lunch break
 
--   Basic visualisation based on [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R) (Part IV) (14:00 - 15:30)
+-   Demonstration and discussion of the Propensity to Cycle Tool (PCT) (15 minute lecture)
+-   Basic visualisation based on [creating-maps-in-R](https://github.com/Robinlovelace/Creating-maps-in-R) (Part IV) (14:15 - 15:30)
 -   Introduction to plotting paradigms in R (lecture)
 -   Complete practical exercises
     -   **Base graphics**
@@ -139,8 +140,8 @@ Day 2: Basics of R as a GIS
 
 15:30 - 15:45 coffee break
 
--   Advanced visualisation (15:45 - 18:45)
--   Demonstration and discussion of the Propensity to Cycle Tool (PCT) (45 minute lecture)
+-   Advanced visualisation (15:45 - 18:45) - options:
+-   Completing Creating-maps-in-R tutorial: Visualising Spatial Data Tutorial (45 minutes)
 -   Practical: Visualising Spatial Data Tutorial (45 minutes)
 
 Coffee break
