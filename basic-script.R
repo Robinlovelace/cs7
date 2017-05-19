@@ -194,4 +194,6 @@ install_github("nowosad/spData")
 f = system.file("shapes/wrld.shp", package = "spData")
 library(sf)
 world = st_read(f)
-#Now the world is yours!
+# Now the world is yours!
+
+# example gist: https://gist.github.com/Robinlovelace/2a37d1577aece48372e91c9d0b017fc9
