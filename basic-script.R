@@ -1,13 +1,3 @@
-2 + 5 * 2
-
-(2 + 5) * 2
-
-
-ls()
-
-x = 1:9
-
-sqrt(x = x)
 
 # this is a comment - use them!
 # use TAB autocomplete for arguments
