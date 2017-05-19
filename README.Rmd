@@ -167,8 +167,11 @@ Coffee break
 
 ## Day 3: Advanced Geographic Data with R
 
-- Introduction to raster data with R (10:00 - 11:30) 
-      - Course handout: [Introduction to Raster Analysis](https://www.dropbox.com/s/obn45ov7kpos5to/Raster_Analysis.pdf?dl=0) by Lex Comber
+- Simple Features with R (10:00 - 11:30) 
+      - Course handout: [Simple Features for Geographic Information](https://github.com/Robinlovelace/geocompr/releases/download/0.1/_main.pdf) 
+      
+11:30 - 11:45 coffee break
+
       - See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
       
 ```{r, eval=FALSE}
