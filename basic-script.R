@@ -1,3 +1,14 @@
+#Welcome! :)
+
+2 + 5 * 2
+
+(2 + 5) * 2
+
+ls()
+
+x = 1:15
+
+sqrt(x = x)
 
 # this is a comment - use them!
 # use TAB autocomplete for arguments
@@ -29,7 +40,6 @@ x$x_sqrd = x$x^2
 
 # download the dataset 'Pupil/Student - teacher ratio and average class' from eurostat
 # for more developed API see https://github.com/rOpenGov/eurostat
-
 
 # download the dataset 'People killed in road accidents' from eurostat
 # and plot a maptable for selected countries
@@ -183,3 +193,4 @@ install_github("nowosad/spData")
 f = system.file("shapes/wrld.shp", package = "spData")
 library(sf)
 world = st_read(f)
+#Now the world is yours!
