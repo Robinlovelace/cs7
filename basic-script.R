@@ -184,3 +184,12 @@ pubs_poz
 library(tmap)
 tmap_mode("view")
 qtm(pubs_poz$osm_points)
+
+# getting simple features data on your computer
+library(devtools)
+# install package from Jakub's site
+install_github("nowosad/spData")
+
+f = system.file("shapes/wrld.shp", package = "spData")
+library(sf)
+world = st_read(f)
