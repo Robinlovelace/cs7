@@ -1,5 +1,6 @@
-#Welcome! :)
+# Welcome! :)
 
+# R is a calculator!
 2 + 5 * 2
 
 (2 + 5) * 2
