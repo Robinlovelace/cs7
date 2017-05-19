@@ -216,3 +216,15 @@ vignette("stplanr-paper")
 # Updated point-pattern analysis text (reproduced just now):
 # http://rpubs.com/RobinLovelace/278311
 # Source code: https://github.com/Robinlovelace/geocompr/blob/master/work-in-progress/10-point-pattern.Rmd
+
+# raster data
+library(raster)
+filename <- system.file("external/test.grd", package="raster")
+r <- raster(filename)
+plot(r)
+r = raster("../Creating-maps-in-R/data/poz_modified.tif")
+plot(r, main='RasterLayer from file')
+s = stack("../Creating-maps-in-R/data/poz_modified.tif")
+plotRGB(s)
+library(mapview)
+viewRGB(s)

@@ -181,7 +181,7 @@ devtools::install_github("robinlovelace/pct-menai")
 15:30 - 15:45 coffee break
 
 -   Raster data with R (15:45 - 17:15)
-    -   Run through this raster data tutorial: <http://rspatial.org/spatial/rst/4-rasterdata.html>
+    -   Run through this raster data tutorial: <http://rspatial.org/spatial/rst/8-rastermanip.html>
     -   See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
     -   Try to overlay vector data on top - apply methods from the tutorial to this poznan raster data
 
