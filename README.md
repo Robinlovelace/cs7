@@ -158,16 +158,12 @@ Day 3: Advanced Geographic Data with R
 
 11:30 - 11:45 coffee break
 
-      - See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
-      
-
-``` r
-library(raster)
-poz = raster("data/poz_modified.tif")
-```
+-   A short tutorial on GitHub (11:45 - 12:30)
+    -   See: <https://guides.github.com/activities/hello-world/>
+-   An introduction to transport data with R (12:30 - 13:15)
 
 <!-- - Spatio-temporal data with **spacetime** (11:30 - 13:45) -->
--   Transport data with **stplanr** (11:45 - 13:15)
+-   Transport data with **stplanr** (12:30 - 13:15)
     -   Exercise: Work through the package's vignette (`vignette("introducing-stplanr")`), which can also be found [online](https://cran.r-project.org/web/packages/stplanr/vignettes/introducing-stplanr.html).
     -   Exercise (optional): Reproduce the analysis represented here on cycling potential over the Menai bridge with reference to the [github.com/Robinlovelace/pct-menai](https://github.com/Robinlovelace/pct-menai/blob/master/vignettes/menai-bridge-cycle.Rmd) repo and by installing the 'pctWales' package from GitHub:
 
@@ -180,8 +176,26 @@ devtools::install_github("robinlovelace/pct-menai")
 13:15 - 14:00 lunch break
 
 -   Points pattern analysis - (14:00 - 15:30)
-    -   Handout: [Point Pattern analysis](https://www.dropbox.com/s/gn1i21rsvipbwom/Point_Pattern.pdf?dl=0) by Lex Comber
--   Simple features with R (15:45 - 18:45)
+    -   Handout: [Point Pattern analysis](https://github.com/Robinlovelace/geocompr/blob/master/work-in-progress/10-point-pattern.Rmd)
+
+15:30 - 15:45 coffee break
+
+-   Raster data with R (15:45 - 17:15)
+    -   Run through this raster data tutorial: <http://rspatial.org/spatial/rst/4-rasterdata.html>
+    -   See [historic raster data for Poznan](https://github.com/Robinlovelace/Creating-maps-in-R/blob/master/data/poz_modified.tif), which you can load with:
+    -   Try to overlay vector data on top - apply methods from the tutorial to this poznan raster data
+
+``` r
+library(raster)
+poz = raster("data/poz_modified.tif")
+```
+
+17:15 - 17:20 Coffee break
+
+-   Free session (17:20 onwards)
+    -   Identify the most interesting data and methods you have discovered during this course
+    -   Apply to the methods to generate new knowledge
+    -   Bonus: publis and communicate your work with GitHub/Rpubs.com
 
 Prerequisites and course home
 -----------------------------
