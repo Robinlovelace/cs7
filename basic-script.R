@@ -212,3 +212,7 @@ vignette("sf2") # another
 vignette("Raster") # a technical one on raster data
 # more advance tutorial
 vignette("stplanr-paper")
+
+# Updated point-pattern analysis text (reproduced just now):
+# http://rpubs.com/RobinLovelace/278311
+# Source code: https://github.com/Robinlovelace/geocompr/blob/master/work-in-progress/10-point-pattern.Rmd
