@@ -197,3 +197,18 @@ world = st_read(f)
 # Now the world is yours!
 
 # example gist: https://gist.github.com/Robinlovelace/2a37d1577aece48372e91c9d0b017fc9
+
+install.packages("stplanr")
+vignette("introducing-stplanr")
+
+od_eg = read.csv(text =
+                   "origin, destination, V1, V2
+                 1, 2, 100, 3
+                 1, 3, 50, 5"
+)
+# or find a vignette of your choice...
+vignette("sf1") # a good one
+vignette("sf2") # another
+vignette("Raster") # a technical one on raster data
+# more advance tutorial
+vignette("stplanr-paper")
